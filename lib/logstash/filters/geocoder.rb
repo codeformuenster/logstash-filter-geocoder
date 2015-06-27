@@ -14,7 +14,7 @@ class LogStash::Filters::Geocoder < LogStash::Filters::Base
 
   # geocoder search provider. choose yandex or google
   # others can be supported if an api key config is added
-  config :lookup, :validate => ["yandex", "google"], :default => "google"
+  config :lookup, :validate => ["yandex", "google", "nominatim", "esri", "dstk", "telize"], :default => "google"
 
   # cache a certain amount of search results. 0 to disable
   # uses a LRU cache library: https://github.com/SamSaffron/lru_redux
