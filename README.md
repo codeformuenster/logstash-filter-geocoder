@@ -9,6 +9,6 @@ It is fully free and fully open source. The license is Apache 2.0, meaning you a
 Build `gem`
 
 ```bash
-$ sudo docker build -t local/logstash-filter-split_featurecollection .
-$ sudo docker run local/logstash-filter-split_featurecollection | tar -x
+$ sudo docker build -t local/logstash-filter-geocoder .
+$ sudo docker run local/logstash-filter-geocoder | tar -x
 ```
